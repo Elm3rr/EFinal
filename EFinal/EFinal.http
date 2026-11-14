@@ -13,7 +13,8 @@ Content-Type: application/json
   "marca": "Toyota",
   "modelo": "Corolla",
   "anio": 2020,
-  "color": "Blanco"
+  "color": "Blanco",
+  "estado": true
 }
 
 ### Actualizar vehiculo
@@ -25,7 +26,8 @@ Content-Type: application/json
   "marca": "Toyota",
   "modelo": "Corolla",
   "anio": 2021,
-  "color": "Negro"
+  "color": "Negro",
+  "estado": false
 }
 
 ### Eliminar vehiculo

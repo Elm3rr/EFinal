@@ -20,5 +20,7 @@ namespace EFinal.Modelos
         public int Anio { get; set; }
         [Column("color")]
         public string Color { get; set; }
+        [Column("estado")]
+        public bool Estado { get; set; } = true;
     }
 }

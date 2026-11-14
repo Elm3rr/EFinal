@@ -40,6 +40,10 @@ namespace EFinal.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("color");
 
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit")
+                        .HasColumnName("estado");
+
                     b.Property<string>("Marca")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")

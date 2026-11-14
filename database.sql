@@ -9,6 +9,7 @@ CREATE TABLE tbVehiculo (
     marca  NVARCHAR(MAX) NOT NULL,
     modelo NVARCHAR(MAX) NOT NULL,
     anio   INT NOT NULL,
-    color  NVARCHAR(MAX) NOT NULL
+    color  NVARCHAR(MAX) NOT NULL,
+    estado BIT NOT NULL DEFAULT 1   -- 1 = Activo, 0 = Inactivo
 );
 GO

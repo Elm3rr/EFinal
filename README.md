@@ -12,6 +12,7 @@ API REST en ASP.NET Core 8 + Entity Framework Core (SQL Server) para administrar
 | modelo | nvarchar(max) | |
 | anio | int | Año del vehículo |
 | color | nvarchar(max) | |
+| estado | bit | `true` = Activo, `false` = Inactivo |
 
 ## Endpoints
 
@@ -30,14 +31,15 @@ Ejemplo de cuerpo (POST / PATCH):
   "marca": "Toyota",
   "modelo": "Corolla",
   "anio": 2020,
-  "color": "Blanco"
+  "color": "Blanco",
+  "estado": true
 }
 ```
 
 ## Cómo ejecutar
 
 1. Revisar la cadena de conexión `ConexionSql` en `EFinal/appsettings.json` (por defecto: `Server=localhost;Database=EFinal;Trusted_Connection=True;TrustServerCertificate=True`).
-2. Crear la base de datos con las migraciones:
+2. Crear la base de datos con las migraciones (`v1` crea la tabla y `v2` agrega `estado`):
    - Consola del Administrador de paquetes: `Update-Database`
    - o CLI: `dotnet ef database update --project EFinal`
    - (Alternativa: ejecutar `database.sql` en SQL Server Management Studio.)

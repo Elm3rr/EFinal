@@ -7,5 +7,6 @@ namespace EFinal.Modelos.DTOS
         public string Modelo { get; set; }
         public int Anio { get; set; }
         public string Color { get; set; }
+        public bool Estado { get; set; } = true;
     }
 }

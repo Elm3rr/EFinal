@@ -13,7 +13,8 @@ namespace EFinal.Mapper
                 Marca = dto.Marca,
                 Modelo = dto.Modelo,
                 Anio = dto.Anio,
-                Color = dto.Color
+                Color = dto.Color,
+                Estado = dto.Estado
             };
         }
         public static Vehiculo ToVehiculo(VehiculoDTO dto)
@@ -24,7 +25,8 @@ namespace EFinal.Mapper
                 Marca = dto.Marca,
                 Modelo = dto.Modelo,
                 Anio = dto.Anio,
-                Color = dto.Color
+                Color = dto.Color,
+                Estado = dto.Estado
             };
         }
     }
