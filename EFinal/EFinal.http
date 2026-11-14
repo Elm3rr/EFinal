@@ -1,0 +1,32 @@
+@EFinal_HostAddress = http://localhost:5237
+
+### Obtener todos los vehiculos
+GET {{EFinal_HostAddress}}/api/vehiculos
+Accept: application/json
+
+### Crear vehiculo
+POST {{EFinal_HostAddress}}/api/vehiculos
+Content-Type: application/json
+
+{
+  "placa": "P123ABC",
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "anio": 2020,
+  "color": "Blanco"
+}
+
+### Actualizar vehiculo
+PATCH {{EFinal_HostAddress}}/api/vehiculos/1
+Content-Type: application/json
+
+{
+  "placa": "P123ABC",
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "anio": 2021,
+  "color": "Negro"
+}
+
+### Eliminar vehiculo
+DELETE {{EFinal_HostAddress}}/api/vehiculos/1
